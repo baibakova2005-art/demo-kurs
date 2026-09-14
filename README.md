@@ -4,6 +4,10 @@
 
 **Живая версия:** https://baibakova2005-art.github.io/demo-kurs/
 
+![Первый экран](screenshots/oblozhka.jpg)
+
+Полные снимки страницы: [компьютер](screenshots/kompyuter.jpg) · [телефон 360 px](screenshots/telefon.jpg)
+
 16 коротких уроков на выгрузках из 1С: сводные таблицы, ВПР, сверки. Домашние задания с проверкой, доступ к записям на год.
 
 ## Стек
