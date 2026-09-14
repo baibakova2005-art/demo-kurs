@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* Холодная деловая палитра: синий акцент (6.4:1 на белом) и лаймовый — только на тёмном. */
+@theme {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-display: "Unbounded Variable", system-ui, sans-serif;
+
+  --color-bg: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-soft: #e8ecff;
+  --color-ink: #121633;
+  --color-muted: #525a78;
+  --color-line: #e1e5f0;
+  --color-line-strong: #b7bfd6;
+  --color-accent: #3b4fd8;
+  --color-accent-hover: #2c3cb3;
+  --color-accent-text: #3446c9;
+  --color-on-accent: #ffffff;
+  --color-lime: #c6f36b;
+  --color-night: #121633;
+}
+
+:root {
+  --radius-btn: 14px;
+  --radius-field: 12px;
+  --radius-card: 22px;
+  --shadow-btn:
+    0 1px 2px rgba(59, 79, 216, 0.2), 0 12px 24px -12px rgba(59, 79, 216, 0.6);
+  --shadow-card:
+    0 1px 2px rgba(18, 22, 51, 0.05), 0 18px 40px -22px rgba(18, 22, 51, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid #3b4fd8;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
