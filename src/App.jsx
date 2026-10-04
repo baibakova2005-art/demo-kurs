@@ -204,7 +204,10 @@ export default function App() {
                   aria-hidden="true"
                   className="size-2 rounded-full bg-accent"
                 />
-                Онлайн-курс · поток стартует 6 октября
+                <span className="sm:hidden">Онлайн-курс · 4 недели</span>
+                <span className="hidden sm:inline">
+                  Онлайн-курс · новый поток каждый месяц
+                </span>
               </p>
               <h1 className="font-display text-[clamp(2rem,1.1rem+3.6vw,3.6rem)] font-semibold leading-[1.08] tracking-[-0.02em]">
                 Excel для бухгалтера: закрывайте месяц на два дня быстрее
@@ -528,7 +531,7 @@ export default function App() {
                 Бронь
               </p>
               <h2 className="font-display text-[clamp(1.7rem,1.1rem+2.4vw,2.6rem)] font-semibold leading-[1.12]">
-                Забронируйте место в потоке 6 октября
+                Забронируйте место в ближайшем потоке
               </h2>
               <p className="mt-4 max-w-[46ch] text-[17px] leading-relaxed text-muted">
                 Пришлём программу, ссылку на оплату и первый урок в подарок,
